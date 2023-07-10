@@ -17,9 +17,8 @@ header {
 }
 .head_btn,.head_btn2{
 	width: 250px;
-	display: block;
+	display: inline-block;
 	text-align: center;
-	background-color: #333333;
 	color: #fff;
 	padding: 20px 60px;
 }
@@ -32,7 +31,29 @@ header {
 .sec_btn{
 	display: flex;
 	justify-content: space-between;
-	margin: 10px 200px;
+	max-width: 1000px;
+	width: 100%;
+	margin: 10px auto;
+}
+.nav_btn_sp {
+	display: none;
+}
+.head_btn01 {
+	background-color: #fd617b;
+	display: block;
+	width: 200px;
+	text-align: center;
+	color: #fff;
+	padding: 20px;
+	margin-right: 20px;
+}
+.head_btn02 {
+	background-color: #1d782e;
+	display: block;
+	width: 200px;
+	text-align: center;
+	color: #fff;
+	padding: 20px;
 }
 .mv,img{
 	width: 100%;
@@ -122,7 +143,7 @@ h5{
 	margin-top: 10px;
 }
 .wrapper02{
-	margin-top: 500px;
+	margin-top: 50px;
 	text-align: center;
 }
 .wrapper03{
@@ -139,4 +160,110 @@ footer{
 	text-align: center;
 	margin-top: 20px;
 	font-size: 30pxpx;
+}
+
+@media screen and (max-width: 767px){
+
+	.header h1{
+		font-size: 18px;
+	}
+	.heaer_right_sp {
+    display: flex;
+	}
+	.head_btn01 {
+    max-width: 50px;
+    padding: 7px;
+    margin-right: 5px;
+	}
+	.head_btn02 {
+    max-width: 50px;
+    padding: 7px;
+	}
+	.header2 {
+	display: none;
+  }
+	.sec_btn{
+	font-size: 13px;
+	margin: 10px auto;
+	max-width: 600px;
+  }
+	.wrapper {
+	display: block;
+	background-color: #fff;
+	padding: 0;
+	margin-top: 40px;
+  }
+	.sec_01_box {
+    display: flex;
+    align-items: center;
+		flex-direction: column;
+    margin-top: 0;
+	}
+	.sec_01_left{
+		align-items: center;
+	}
+	.sec_01_left h3{
+		font-size: 20px;
+		text-align: center;
+	}
+	.sec_01_left p{
+		font-size: 15px;
+		text-align: center;
+	}
+	.sec_01_right {
+    width: 100%;
+		margin-top: 20px;
+	}
+	.sec_03 {
+    margin-top: 40px;
+	}
+	.sec_01_title h1{
+		font-size: 15px;
+		text-align: center;
+	}
+	.sec_03_content {
+		display: block;
+    width: 100%;
+    margin-top: 20px;
+	}
+	.sec_03_box {
+    width: 100%;
+		margin-top: 10px;
+	}
+	.sec_03_box p {
+    margin-top: 10px;
+		font-size: 10px;
+	}
+	.content_03 {
+    margin-top: 40px;
+    display: block;
+    background-color: lightgrey;
+    padding: 15px 15px; 
+	}
+	.content_right{
+		text-align: center;
+	}
+	.sec_03_h3{
+		font-size: 20px;
+		margin-top: 10px;
+	}
+	.sec_03_p{
+		font-size: 15px;
+	}
+	.wrapper_900 {
+    margin-top: 40px;
+	}
+	.sec_02content {
+    margin-top: 10px;
+    display: block;
+	}
+	.content_02 {
+    width: 100%;
+	}
+
+
+	
+
+
+
 }
